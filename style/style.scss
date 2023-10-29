@@ -1,0 +1,46 @@
+@import "./mixins" ;
+*{
+    font-family: 'Montserrat', sans-serif
+}
+body{
+    
+    background-color: #2DC071;
+    main{
+        background-image: url(../image/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:55vh;
+    @include mobile{
+        background-image: none;
+    }
+    @include tablet{
+        background-image: none;
+    }
+    @include desktop{
+        background-image: none;
+    }
+    }
+
+
+}
+#section{
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 60px;
+    .section_text{
+        text-align: center;
+        color:#fff;
+        button{
+            border-radius: 37px;
+border: 1px solid var(--light-gray-1, #FAFAFA);
+background-color: #2DC071;
+color: #fff;
+padding: 20px 30px;
+            
+        }
+        
+        }
+
+    }
